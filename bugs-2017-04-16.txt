@@ -1,0 +1,25 @@
+
+-- Files can not be renamed when paths are relative (works with
+   absolute paths);
+
+-- Files can not be renamed
+
+-- Null pointer exception observed once when renaming files (should
+   reproduce);
+
+-- JabFox does not get some bibliographies even though Zotero gets
+   them;
+
+-- JabRef: PDF can not be retrieved from NDPI "Entropy" even though "Entropy"
+   is an OA journal, the PDF is open, and Zotero fetches the PDF.
+
+-- When a wrong encoding is set (UTF-16BE) as a database default, and
+   teh database does not have explicit encoding (as when exported from
+   Zotero), JabRef just opens it as an empty database, reporting "no
+   records found"; JabFox in such case just does noting, even does not
+   start JabRef or conncet to existing Jabref.
+
+-- Retro bug: JabRef 2.6 used "UTF8" as the encoding designator, while
+   JabRef >= 3.8 uses "UTF-8", making the two databases
+   incompatible. Why not saving the database encoding in the same way
+   as it was read in?
