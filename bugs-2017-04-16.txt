@@ -19,6 +19,12 @@
    records found"; JabFox in such case just does noting, even does not
    start JabRef or conncet to existing Jabref.
 
+-- second process of JabRef does not start with the exception
+   "23:04:45.375 [AWT-EventQueue-0] WARN
+   org.jabref.logic.remote.server.RemoteListenerServerLifecycle - Port
+   is blocked
+   java.net.BindException: Address already in use (Bind failed)"
+
 -- Retro bug: JabRef 2.6 used "UTF8" as the encoding designator, while
    JabRef >= 3.8 uses "UTF-8", making the two databases
    incompatible. Why not saving the database encoding in the same way
