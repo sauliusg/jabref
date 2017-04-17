@@ -29,3 +29,16 @@
    JabRef >= 3.8 uses "UTF-8", making the two databases
    incompatible. Why not saving the database encoding in the same way
    as it was read in?
+
+-- There are two test files:
+
+   saulius@kolibris jabref/ $ ff BibDatabaseContextTest.java
+   ./src/test/java/org/jabref/model/BibDatabaseContextTest.java
+   ./src/test/java/org/jabref/model/database/BibDatabaseContextTest.java
+
+   Probably they should be merged into
+   .../database/BibDatabaseContextTest.java?
+
+-- The .../database/BibDatabaseContextTest.java test uses unix
+   specific path strings, e.g. "./relative/subdir". Should we change
+   them to Paths.get(".","relative","subdir")?
