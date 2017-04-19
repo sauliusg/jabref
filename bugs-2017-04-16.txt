@@ -48,3 +48,49 @@
 -- The .../database/BibDatabaseContextTest.java test uses unix
    specific path strings, e.g. "./relative/subdir". Should we change
    them to Paths.get(".","relative","subdir")?
+
+-- Autogenerating keys for a file with all keys (example file
+   'www.unc.edu.bib' added) equal throws an exception:
+
+saulius@koala papers/ $ AI: INFO 19-04-2017 10:18, 19: Configuration file has been successfully found as resource
+10:18:55.598 [AWT-EventQueue-0] INFO  org.jabref.logic.importer.OpenDatabase - Opening: new/www.unc.edu.bib
+10:18:55.862 [AWT-EventQueue-0] WARN  org.jabref.JabRefGUI - There seem to be problems with OpenJDK and the default GTK Look&Feel. Using Metal L&F instead. Change to another L&F with caution.
+File: grouptree.fxml not found, attempting with camel case
+Apr 19, 2017 10:18:57 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 8.0.112 by JavaFX runtime of version 8.0.60
+File: grouptree.css not found, attempting with camel case
+10:19:12.179 [AWT-EventQueue-0] ERROR org.jabref.gui.BasePanel - runCommand error: No value present
+java.util.NoSuchElementException: No value present
+	at java.util.Optional.get(Optional.java:135) ~[?:1.8.0_121]
+	at org.jabref.gui.bibtexkeypattern.SearchFixDuplicateLabels.update(SearchFixDuplicateLabels.java:100) ~[JabRef-4.0.0-dev.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at spin.Invocation.evaluate(Invocation.java:175) ~[spin.jar:?]
+	at spin.over.SpinOverEvaluator.evaluate(SpinOverEvaluator.java:62) ~[spin.jar:?]
+	at spin.ProxyFactory.evaluteInvocation(ProxyFactory.java:85) ~[spin.jar:?]
+	at spin.JDKProxyFactory$SpinInvocationHandler.invoke(JDKProxyFactory.java:102) ~[spin.jar:?]
+	at com.sun.proxy.$Proxy37.update(Unknown Source) ~[?:?]
+	at org.jabref.gui.BasePanel.runWorker(BasePanel.java:260) ~[JabRef-4.0.0-dev.jar:?]
+	at org.jabref.gui.BasePanel.runCommand(BasePanel.java:1014) ~[JabRef-4.0.0-dev.jar:?]
+	at org.jabref.gui.importer.actions.HandleDuplicateWarnings.performAction(HandleDuplicateWarnings.java:28) ~[JabRef-4.0.0-dev.jar:?]
+	at org.jabref.gui.importer.actions.OpenDatabaseAction.performPostOpenActions(OpenDatabaseAction.java:86) ~[JabRef-4.0.0-dev.jar:?]
+	at org.jabref.JabRefGUI.openWindow(JabRefGUI.java:182) ~[JabRef-4.0.0-dev.jar:?]
+	at org.jabref.JabRefGUI.<init>(JabRefGUI.java:63) ~[JabRef-4.0.0-dev.jar:?]
+	at org.jabref.JabRefMain.lambda$start$1(JabRefMain.java:144) ~[JabRef-4.0.0-dev.jar:?]
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311) [?:1.8.0_121]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:756) [?:1.8.0_121]
+	at java.awt.EventQueue.access$500(EventQueue.java:97) [?:1.8.0_121]
+	at java.awt.EventQueue$3.run(EventQueue.java:709) [?:1.8.0_121]
+	at java.awt.EventQueue$3.run(EventQueue.java:703) [?:1.8.0_121]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_121]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80) [?:1.8.0_121]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:726) [?:1.8.0_121]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201) [?:1.8.0_121]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116) [?:1.8.0_121]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105) [?:1.8.0_121]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [?:1.8.0_121]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93) [?:1.8.0_121]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82) [?:1.8.0_121]
+
