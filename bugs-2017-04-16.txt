@@ -2,10 +2,16 @@
 -- Files can not be renamed when paths are relative (works with
    absolute paths);
 
--- Files can not be renamed
-
 -- Null pointer exception observed once when renaming files (should
    reproduce);
+
+-- Renaming files creates strange empty directories named after the
+   PDF file name, e.g. 'Author2006.pdf/' (might be consequence of the
+   first two issues);
+
+-- Remaning files throughs 'wrong path component" exception (I'm
+   writing an aproximate exception name from memory, needs to be
+   double-checked; might be consequence of the first two issues);
 
 -- JabFox does not get some bibliographies even though Zotero gets
    them;
