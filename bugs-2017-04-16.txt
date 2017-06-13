@@ -20,7 +20,7 @@
    is an OA journal, the PDF is open, and Zotero fetches the PDF.
 
 -- When a wrong encoding is set (UTF-16BE) as a database default, and
-   teh database does not have explicit encoding (as when exported from
+   the database does not have explicit encoding (as when exported from
    Zotero), JabRef just opens it as an empty database, reporting "no
    records found"; JabFox in such case just does noting, even does not
    start JabRef or conncet to existing Jabref.
