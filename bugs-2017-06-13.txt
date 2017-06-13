@@ -1,0 +1,6 @@
+-- No button to remove file name;
+
+-- Removing file name from the .bib file generates many identical
+   entries, non can be removed;
+
+-- Custom download file name does not work -- silently;
