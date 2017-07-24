@@ -258,7 +258,7 @@ public class LayoutHelper {
                 endOfFile = true;
             }
 
-            if (!Character.isLetter((char) c) && (c != '_') && (c != '-')) {
+            if (!Character.isLetter((char) c)) {
                 unread(c);
 
                 name = buffer == null ? "" : buffer.toString();
