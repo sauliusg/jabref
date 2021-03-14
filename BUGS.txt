@@ -1,0 +1,14 @@
+-- Selecting another group looses highlight of the edited entry.
+
+   When a group interface is used, switching a group interferes with
+   the entry list highlight. When I click on the entry in the entry
+   list, that entry is highlighted (displayed on a blue background as
+   of current design), and the editor tabs are opened below. When I
+   switch to a different group that does not contain the edited entry,
+   the highlighted entry goes away. When I now refocus on the original
+   group again, or on the "All entries" (super)group, the edited entry
+   (which is still in the editing tabs!) is not highlighted, not
+   brought into the display on the entry list, and is very difficult
+   ti find (there is not easy-to-find-way to automatically bring the
+   edited entry into the list).
+
