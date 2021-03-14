@@ -42,3 +42,54 @@
    The situation is shown in the "Screenshot from 2021-03-13
    21-25-38.png" screen snapshot. Unfortunately, it is impossible to
    reproduce so far...
+
+-- The current groups interface is awkward.
+
+   To make subgroups with identical names in several subgroups, I need
+   to think out a unique name for them. The ad-hoc names are difficult
+   to remember; after all, this is why we use a group tree in the
+   first place – to spare us remembering what group names are already
+   present in another branch! Thus one of the obvious options is to
+   prefix the group name with the full path, e.g.:
+
+	sg/Computer Science/Algorithms
+	sg/Bioinformatics/Algorithms
+
+   and so on (sg/ is my user name prefix; we need this since the
+   database is collaborative and shared by several users, and every
+   user naturally wants to assign group names without being interfered
+   or bothered by other users' assignments). I understand from the
+   length discussions of the new group interface that this was this
+   was the intended way to solve the group name uniqueness
+   problem. Unfortunately, JabRef does not help to maintain this
+   mechanism: when creating a new group, the hierarchy name is not
+   suggested; all names are displayed in full, so names deeper in to
+   the tree become very long, do not fit well into the allocated
+   window area and contain a lot of repetitive prefixes (0 bits
+   information) that obscure important text.
+
+   New group entries are appended at the end of the current group list;
+   extra sorting operation is need to bring entries into alphabetic
+   order. And if different order needs to be maintained, there is no
+   good support for that since the only supported operation is "sort
+   all groups recursively...". Thus, maintaining a different sorting
+   policy becomes next to impossible, and a separate sorting operation
+   looses much of its sense.
+
+   As a contrast, Zotero has a very simple and "intuitive"
+   (i.e. working as is usually expected) tree interface to sort
+   bibliographic records into groups; group names can be conveniently
+   assigned at will, without bothering that they will clash with a
+   name elsewhere in the tree. This particular function is very much
+   missing in JabRef, and is indeed a big show stopper.
+
+   Note that with the current implementation, groups essentially
+   duplicate the function of keywords, adding additional quirk that
+   each time I collapse a group my database file is changed (which I
+   would rather not. A self-made hierarchical keywords can also be
+   implemented without any support from JabRef itself (by adopting a
+   personal agreement like 'user/Topic/Subtopic'). Thus it is not
+   clear what benefits do groups as they are currently implemented
+   bring to JabRef, and there are clearly functions that are badly
+   missing (like a full-featured Zotero-like group tree mentioned
+   above).
