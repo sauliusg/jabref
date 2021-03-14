@@ -93,3 +93,24 @@
    bring to JabRef, and there are clearly functions that are badly
    missing (like a full-featured Zotero-like group tree mentioned
    above).
+
+-- The file autolinking interface is confusing.
+
+   The current autolinking mechanism is confusing; it presents
+   automatically found files as if they were attached to the entry,
+   although they are not, and often the suggested names are
+   incorrect. The difference is only a small icon which one needs to
+   distinguish carefully from other tiny signs (e.g. the down-left
+   arrow which turns out to be "write XMP metadata").
+
+   A much better interface was implemented before when files were only
+   searched and suggested when a special button next to the field was
+   pressed (like the "download" buttons now); the same should be for
+   the XML metadata writer. Making these functions available as
+   buttons would also make the GUI more consistent (since there are
+   three buttons anyway).
+
+   For mass operations, a special menu item should be available
+   (probably the current "Search for unlinked local files" wold do the
+   job, but I am not sure, never tried it). In any case, such function
+   used to be in menus some versions ago...
