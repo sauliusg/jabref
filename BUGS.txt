@@ -12,3 +12,33 @@
    to find (there is not easy-to-find-way to automatically bring the
    edited entry into the list).
 
+-- No way to configure JabRef so that it does *not* create backup
+   files.
+
+   There used to be a checkbox in configuration '[x] do not create
+   backup files". By default backup file creation was activated, which
+   if fine, but I always switch it off in most cases since I use
+   version control for any important bibliography databases. Thus the
+   backup files from being helpful would become an annoying clutter.
+
+   Unfortunately, in recent JabRef versions (probably with some 4.0 or
+   5.0 release) this configuration item was removed, and I now have to
+   live with annoying "help" from the program that always leaves a
+   *.bak file when the database is saved. This interferes with
+   TAB-expansion on the command line, requires additional svn:ignore
+   (or .gitignore) settings, and does not bring any useful function
+   since all files are versioned anyway which is much more powerful
+   than a *.bak file.
+
+   While backup files might be a helpful time saver for some people
+   (who do not use version control for their files), in the version
+   control setup they are a nuisance and not a help. Would it be
+   possible to bring this configuration item back as it used to be
+   implemented?
+
+-- Creating a group and dragging an entry there caused an "index out
+   of bounds exception".
+
+   The situation is shown in the "Screenshot from 2021-03-13
+   21-25-38.png" screen snapshot. Unfortunately, it is impossible to
+   reproduce so far...
