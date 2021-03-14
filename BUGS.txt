@@ -9,6 +9,6 @@
    group again, or on the "All entries" (super)group, the edited entry
    (which is still in the editing tabs!) is not highlighted, not
    brought into the display on the entry list, and is very difficult
-   ti find (there is not easy-to-find-way to automatically bring the
+   to find (there is not easy-to-find-way to automatically bring the
    edited entry into the list).
 
