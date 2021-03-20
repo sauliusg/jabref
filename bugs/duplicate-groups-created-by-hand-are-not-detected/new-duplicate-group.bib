@@ -6,16 +6,325 @@
   title   = {Some title about languages},
   year    = {2021},
   pages   = {12-22},
-  groups  = {Languages},
+  groups  = {Lithuanian},
   owner   = {saulius},
+}
+
+@Article{Alvarez2013,
+  author    = {Santiago Alvarez},
+  journal   = {Dalton Transactions},
+  title     = {A cartography of the van der Waals territories},
+  year      = {2013},
+  number    = {24},
+  pages     = {8617},
+  volume    = {42},
+  doi       = {10.1039/c3dt50599e},
+  groups    = {van der Waals radii},
+  owner     = {saulius},
+  publisher = {Royal Society of Chemistry ({RSC})},
+}
+
+@Standard{ISO2007,
+  organization = {ISO/IEC},
+  title        = {Programming languages — C. Committee Draft — Septermber 7, 2007 ISO/IEC 9899:TC3},
+  author       = {ISO},
+  year         = {2007},
+  creationdate = {2012-10-21T00:00:00},
+  file         = {:by-author/I/ISO/2007_ISO.pdf:PDF},
+  groups       = {C},
+  keywords     = {CS, programming languages, C, standards},
+  owner        = {saulius},
+  school       = {WG14/N1256},
+}
+
+@Article{Rafkind2009,
+  author       = {Rafkind, Jon and Adam Wick and John Regehr and Matthew Flatt},
+  title        = {Precise Garbage Collection for C},
+  year         = {2009},
+  pages        = {manuscript},
+  abstract     = {Magpie is a source-to-source transformation for C programs that enables precise garbage collection, where precise means that integers are not confused with pointers, and the liveness of a pointer is apparent at the source level. Precise GC is primarily useful for long-running programs and programs that interact with untrusted components. In particular, we have successfully deployed precise GC in the C implementation of a language run-time system that was originally designed to use conservative GC. We also report on our experience in transforming parts of the Linux kernel to use precise GC instead of manual memory management.},
+  creationdate = {2012-10-21T00:00:00},
+  file         = {:by-author/R/Rafkind/2009_Rafkind_manuscript.pdf:PDF},
+  groups       = {C},
+  keywords     = {CS, garbage collectors, precise garbage collection, conservative garbage collection, the C programming language},
+  owner        = {saulius},
+}
+
+@Article{Nicart2008,
+  author       = {Florent Nicart},
+  journal      = {Software --- Practice and Experience},
+  title        = {Towards scalable virtuality in C++},
+  year         = {2008},
+  month        = {November},
+  pages        = {1451--1473},
+  abstract     = {This article describes a programming technique that allows a size reduction of C++ objects by designing classes in a particular way. In order to reduce the size of the objects to the extreme, a technique to simulate runtime polymorphism and avoid the addition of the implicit virtual pointer is presented.},
+  creationdate = {2012-10-21T00:00:00},
+  doi          = {10.1002/spe.871},
+  file         = {:by-author/N/Nicart/2008_Nicart_871.pdf:PDF},
+  groups       = {C++},
+  keywords     = {CS, programming languages, C++, polymorphism simulation, C++ classes, virtual function, virtual pointer, bitwise fields, space saving, memory usage},
+  owner        = {saulius},
+}
+
+@TechReport{Prechelt2000,
+  author       = {Prechelt, Lutz},
+  title        = {An empirical comparison of C, C++, Java, Perl, Python, Rexx, and Tcl for a search/string-processing program},
+  year         = {2000},
+  month        = {March},
+  abstract     = {80 implementations of the same set of requirements, created by 74 different programmers in vari- ous languages, are compared for several properties, such as run time, memory consumption, source text length, comment density, program structure, reliability, and the amount of effort required for writing them. The results indicate that, for the given programming problem, “scripting languages” (Perl, Python, Rexx, Tcl) are more productive than conventional languages. In terms of run time and memory consumption, they often turn out better than Java and not much worse than C or C++. In general, the differences between languages tend to be smaller than the typical differences due to different programmers within the same language.},
+  creationdate = {2012-10-21T00:00:00},
+  file         = {:by-author/P/Prechelt/2000_Prechelt.pdf:PDF},
+  groups       = {C++},
+  keywords     = {CS, computer language comparison},
+  owner        = {saulius},
+  school       = {Fakultät für Informatik, Universität Karlsruhe, D-76128 Karlsruhe, Germany, +49/721/608-4068, Fax: +49/721/608-7343, http://wwwipd.ira.uka.de/EIR/},
+}
+
+@InProceedings{Chamberlin1980,
+  author       = {Donald D. Chamberlin},
+  booktitle    = {{ICOD}},
+  title        = {A Summary of user Experience with the {SQL} Data Sublanguage},
+  year         = {1980},
+  pages        = {181--203},
+  bibsource    = {dblp computer science bibliography, http://dblp.org},
+  biburl       = {http://dblp.org/rec/bib/conf/icod/Chamberlin80},
+  creationdate = {2017-10-28T00:00:00},
+  file         = {:by-author/C/Chamberlin/1980_Chamberlin_181.pdf:PDF},
+  groups       = {SQL},
+  keywords     = {SQL, databases},
+  owner        = {saulius},
+  url          = {http://dblp.org/rec/html/conf/icod/Chamberlin80},
+}
+
+@Article{Blunschi2012,
+  author        = {Blunschi, Lukas and Jossen, Claudio and Kossman, Donald and Mori, Magdalini and Stockinger, Kurt},
+  journal       = {{arXiv}:1207.0134 [cs]},
+  title         = {{SODA}: Generating {SQL} for Business Users},
+  year          = {2012},
+  month         = jun,
+  pages         = {1207.0134},
+  abstract      = {The purpose of data warehouses is to enable business analysts to make better decisions. Over the years the technology has matured and data warehouses have become extremely successful. As a consequence, more and more data has been added to the data warehouses and their schemas have become increasingly complex. These systems still work great in order to generate pre-canned reports. However, with their current complexity, they tend to be a poor match for non tech-savvy business analysts who need answers to ad-hoc queries that were not anticipated. This paper describes the design, implementation, and experience of the {SODA} system (Search over {DAta} Warehouse). {SODA} bridges the gap between the business needs of analysts and the technical complexity of current data warehouses. {SODA} enables a Google-like search experience for data warehouses by taking keyword queries of business users and automatically generating executable {SQL}. The key idea is to use a graph pattern matching algorithm that uses the metadata model of the data warehouse. Our results with real data from a global player in the financial services industry show that {SODA} produces queries with high precision and recall, and makes it much easier for business users to interactively explore highly-complex data warehouses.},
+  archiveprefix = {arxiv},
+  creationdate  = {2017-10-28T00:00:00},
+  eprint        = {1207.0134},
+  file          = {arXiv\:1207.0134 PDF:by-author/B/Blunschi/2012_Blunschi_134.pdf:application/pdf},
+  groups        = {SQL},
+  keywords      = {Computer Science - Databases},
+  owner         = {saulius},
+  shorttitle    = {{SODA}},
+  url           = {http://arxiv.org/abs/1207.0134},
+  urldate       = {2017-10-28},
+}
+
+@Article{Kulkarni2012,
+  author          = {Krishna Kulkarni and Jan-Eike Michels},
+  journal         = j-SIGMOD,
+  title           = {Temporal features in {SQL:2011}},
+  year            = {2012},
+  issn            = {0163-5808 (print), 1943-5835 (electronic)},
+  month           = sep,
+  number          = {3},
+  pages           = {34--43},
+  volume          = {41},
+  abstract        = {SQL:2011 was published in December of 2011, replacing SQL:2008 as the most recent revision of the SQL standard. This paper covers the most important new functionality that is part of SQL:2011: the ability to create and manipulate temporal tables.},
+  acknowledgement = {#ack-nhfb#},
+  bibdate         = {Mon Oct 22 10:52:52 MDT 2012},
+  bibsource       = {http://portal.acm.org/; http://www.math.utah.edu/pub/tex/bib/sigmod.bib},
+  coden           = {SRECD8},
+  creationdate    = {2016-11-17T00:00:00},
+  doi             = {http://dx.doi.org/10.1145/2380776.2380786},
+  file            = {2012_Kulkarni_34.pdf:by-author/K/Kulkarni/2012_Kulkarni_34.pdf:PDF},
+  fjournal        = {SIGMOD Record (ACM Special Interest Group on Management of Data)},
+  groups          = {SQL},
+  issn-l          = {0163-5808},
+  journal-url     = {http://portal.acm.org/browse_dl.cfm?idx=J689},
+  keywords        = {CS, SQL, temporal features, SQL standard, SQL 2011, data versioning},
+  owner           = {saulius},
+}
+
+@Article{Torp2004,
+  author       = {Torp, Kristian and Jensen, Christian S. and Snodgrass, Richard T.},
+  journal      = {Information Systems},
+  title        = {Modification semantics in now-relative databases},
+  year         = {2004},
+  issn         = {0306-4379},
+  month        = {Dec},
+  number       = {8},
+  pages        = {653--683},
+  volume       = {29},
+  abstract     = {Most real-world databases record time-v arying information. In such databases, theMost real-world databases record time-varying information. In such databases, the notion of “the current time,” or NOW, occurs naturally and prominently. For example, when capturing the past states of a relation using begin and end time columns, tuples that are part of the current state have some past time as their begin time and NOW as their end time. While the semantics of such variable databases has been described in detail and is well understood, the modification of variable databases remains une xplored. This paper defines the semantics of modifications involving the variable NOW. More specifically, the problems with modifications in the presence of NO W are explored, illustrating that the main problems are with modifications of tuples that reach into the future. The paper defines the semantics of modifications—including insertions, deletions, and updates—of databases without NOW, with NOW, and with values of the type NOW + $\Delta$, where $\Delta$ is a non-variable time duration. To accommodate these semantics, three new timestamp values are introduced. Finally, implementation is explored. We sho w how to represent the variable NOW with columns of standard SQL data types and give a mapping from SQL on now-relative data to standard SQL on these columns. The paper thereby completes the semantics, the querying, and the modification of now-relative databases.},
+  creationdate = {2016-11-17T00:00:00},
+  doi          = {10.1016/s0306-4379(03)00047-4},
+  file         = {2004_Torp_653.pdf:by-author/T/Torp/2004_Torp_653.pdf:PDF},
+  groups       = {SQL},
+  keywords     = {CS, temporal databases, database versioning},
+  owner        = {saulius},
+  publisher    = {Elsevier BV},
+  url          = {http://dx.doi.org/10.1016/S0306-4379(03)00047-4},
+}
+
+@Presentation{Thalmann2008,
+  author       = {Lars Thalmann and Mats Kindahl},
+  title        = {MySQL Replication Tutorial},
+  year         = {2008},
+  creationdate = {2016-03-05T00:00:00},
+  file         = {2008_Thalmann.pdf:by-author/T/Thalmann/2008_Thalmann.pdf:PDF},
+  groups       = {sg/MySQL, sg/replication, SQL},
+  keywords     = {Databases, replication, master-slave replication, multi-master replication, MySQL, SQL},
+  owner        = {saulius},
+  url          = {http://assets.en.oreilly.com/1/event/2/MySQL%20Replication%20Tutorial%20Presentation%202.pdf},
+}
+
+@Webpage{Zaitsev2006,
+  author       = {Peter Zaitsev},
+  retrieved    = {2009-04-24},
+  title        = {MySQL Query Cache (MySQL Performance Blog)},
+  url          = {http://www.percona.com/blog/2006/07/27/mysql-query-cache/},
+  year         = {2006},
+  creationdate = {2015-03-03T00:00:00},
+  file         = {:by-author/Z/Zaitsev/2006_Zaitsev.odt:},
+  groups       = {SQL},
+  keywords     = {CS, databases, query_cache},
+  owner        = {saulius},
+}
+
+@PhdThesis{Miao2010,
+  author       = {Haixing Miao},
+  school       = {School of Physics, The University of Western Australia},
+  title        = {Exploring Macroscopic Quantum Mechanics in Optomechanical Devices},
+  year         = {2010},
+  abstract     = {Recent significant achievements in fabricating low-loss optical and mechanical elements have aroused intensive interest in optomechanical devices which couple optical fields to mechanical oscillators, e.g., in laser interferometer gravitational- wave (GW) detectors. Not only can such devices be used as sensitive probes for weak forces and tiny displacements, but they also lead to the possibilities of investigating quantum behaviors of macroscopic mechanical oscillators, both of which are the main topics of this thesis. They can shed light on improving the sensitivity of quantum-limited measurement, and on understanding the quantum- to-classical transition. This thesis is a collection of publications that I worked on together with the UWA group and the LIGO Macroscopic Quantum Mechanics (MQM) discussion group. In the first part of this thesis, we will discuss different approaches for surpassing the standard quantum limit for the displacement sensitivity of optomechanical devices, mostly in the context of GW detectors. They include: (i) Modifying the input optics. We consider filtering two frequency-independent squeezed light beams through a tuned resonant cavity to obtain an appropriate frequency depen- dence, which can be used to reduce the measurement noise of the GW detector over the entire detection band; (ii) Modifying the output optics. We study a time-domain variational readout scheme which measures the conserved dynamical quantity of a mechanical oscillator: the mechanical quadrature. This evades the measurement-induced back action and achieves a sensitivity limited only by the shot noise. This scheme is useful for improving the sensitivity of signal-recycled GW detectors, provided the signal-recycling cavity is detuned, and the optical spring effect is strong enough to shift the test-mass pendulum frequency from 1 Hz up to the detection band around 100 Hz; (iii) Modifying the dynamics. We explore frequency dependence in double optical springs in order to cancel the positive inertia of the test mass, which can significantly enhance the mechanical response and allow us to surpass the SQL over a broad frequency band. In the second part of this thesis, two essential procedures for an MQM experiment with optomechanical devices are considered: (i) state preparation, in which we prepare a mechanical oscillator in specific quantum states. We study the preparations of both Gaussian and non-Gaussian quantum states, and also the creation of quantum entanglements between the mechanical oscillator and the optical field. Specifically, for the Gaussian quantum states, e.g., the quantum ground state, we consider the use of passive cooling and optimal feedback control in cavity-assisted schemes. For non-Gaussian quantum states, we introduce the idea of coherently transferring quantum states from the optical field to the mechanical oscillator. For the quantum entanglement, we consider the entanglement between the mechanical oscillator and the finite degrees-of-freedom cavity modes, and also the infinite degrees-of-freedom continuum optical mode. (ii) state verification, in which we probe and verify the prepared quantum states. A similar time-dependent homodyne detection method as discussed in the first part is implemented to evade the back action, which allows us to achieve a verification accuracy that is below the Heisenberg limit. The experimental requirements and feasibilities of these two procedures are considered in both small-scale cavity-assisted optomechanical devices, and in large-scale advanced GW detectors.},
+  creationdate = {2013-10-22T00:00:00},
+  file         = {2010_Miao_thesis.pdf:by-author/M/Miao/2010_Miao_thesis.pdf:PDF},
+  groups       = {SQL},
+  keywords     = {quantum mechanics, mechanical quantum systems, gravity wave detection},
+  owner        = {saulius},
+  url          = {https://gwic.ligo.org/thesisprize/2010/miao_thesis.pdf},
+}
+
+@Article{Behrend2008,
+  author       = {Andreas Behrend and Christian Dorau and Rainer Manthey and Gereon Schüeller},
+  title        = {Incremental View-Based Analysis of Stock Market Data Streams},
+  year         = {2008},
+  pages        = {269-275},
+  abstract     = {In this paper we show the usefulness and feasibility of applying conventional SQL queries for analyzing a wide spectrum of data streams. As application area we have chosen the analysis of stock market data, mainly because this kind of application exhibits sufficiently many of those characteristics for which relational query technology can be considered a valuable instrument in a stream context. The resulting TInTo system is a tool for computing so-called technical indicators, numerical values calculated from a certain kind of stock market data, characterizing the development of stock prices over a given time period. Update propagation is used for the incremental recomputation of indicator views defined over a stream of continuously changing price data.},
+  creationdate = {2012-10-21T00:00:00},
+  file         = {:by-author/B/Behrend/2008_Behrend_269.pdf:PDF},
+  groups       = {SQL},
+  keywords     = {CS, databases, continuous},
+  owner        = {saulius},
+}
+
+@Presentation{Schwartz2008,
+  author       = {Baron Schwartz},
+  title        = {The MySQL Query Cache},
+  year         = {2008},
+  creationdate = {2012-10-21T00:00:00},
+  file         = {:by-author/S/Schwartz/2008_Schwartz_slides.pdf:PDF},
+  groups       = {SQL},
+  keywords     = {CS, databases, query},
+  owner        = {saulius},
+  pages        = {slides},
+}
+
+@InCollection{Rajan2006,
+  author       = {Rajan, H. and Uchida, H. and Bryan, D.L. and Swaminathan, R. and Downs, R.T. and Hall-Wallace, M},
+  booktitle    = {Geoinformatics: Data to Knowledge},
+  publisher    = {Geological Society of America},
+  title        = {Building the American Mineralogist Crystal Structure Database: A recipe for construction of a small Internet database},
+  year         = {2006},
+  address      = {Boulder, CO, United States},
+  editor       = {Sinha, A.K.},
+  pages        = {73-80},
+  series       = {Geological Society of America Special Papers},
+  volume       = {397},
+  abstract     = {Crystal structure data represent one of the most important resources for developing scientific knowledge and should be archived in ways that make them easy to access and preserve. The American Mineralogist Crystal Structure Database currently contains every crystal structure published in American Mineralogist, The Canadian Mineralogist, European Journal of Mineralogy, and Physics and Chemistry of Minerals. It is maintained by the American and Canadian mineralogical societies and is freely accessible through the Internet. The database consists of the data, server-side search and retrieval software and user-side analysis software. It is managed through a partnership of PHP and MySQL programming that provide dynamic construction of Web pages and search procedures. The purpose of this paper is to describe the database and its implementation and to illustrate how to construct similar small, interactive Internet databases.},
+  creationdate = {2011-10-20T00:00:00},
+  doi          = {10.1130/2006.2397(06)},
+  file         = {2006_Rajan_73.pdf:by-author/R/Rajan/2006_Rajan_73.pdf:PDF},
+  groups       = {am/AMCSD, SQL},
+  journal      = {Geological Society of America Special Paper},
+  keywords     = {databases, AMCSD},
+  owner        = {saulius},
+}
+
+@TechReport{Agrawal2004,
+  author       = {Sanjay Agrawal and Vivek Narasayya and Beverly Yang},
+  title        = {Integrating Vertical and Horizontal Partitioning into Automated Physical Database Design},
+  year         = {2004},
+  abstract     = {In addition to indexes and materialized views, horizontal and vertical partitioning are important aspects of physical design in a relational database system that significantly impact performance. Horizontal partitioning also provides manageability; database administrators often require indexes and their underlying tables partitioned identically so as to make common operations such as backup/restore easier. While partitioning is important, incorporating partitioning makes the problem of automating physical design much harder since: (a) The choices of partitioning can strongly interact with choices of indexes and materialized views. (b) A large new space of physical design alternatives must be considered. (c) Manageability requirements impose a new constraint on the problem. In this paper, we present novel techniques for designing a scalable solution to this integrated physical design problem that takes both performance and manageability into account. We have implemented our techniques and evaluated it on Microsoft SQL Server. Our experiments highlight: (a) the importance of taking an integrated approach to automated physical design and (b) the scalability of our techniques.},
+  creationdate = {2008-07-28T00:00:00},
+  file         = {:by-author/A/Agrawal/2004_Agrawal.pdf:PDF},
+  groups       = {SQL},
+  owner        = {saulius},
+  school       = {Microsoft Research; Stanford University},
+}
+
+@Article{Malinowski2007,
+  author       = {Malinowski, Elzbieta and Zim\'{a}nyi, Esteban},
+  journal      = {Geoinformatica},
+  title        = {Logical Representation of a Conceptual Model for Spatial Data Warehouses},
+  year         = {2007},
+  issn         = {1384-6175},
+  pages        = {431--457},
+  volume       = {11},
+  abstract     = {The MultiDimER model is a conceptual model used for representing a multidimensional view of data for Data Warehouse (DW) and On-Line Analytical Processing (OLAP) applications. This model includes a spatial extension allowing spatiality in levels, hierarchies, fact relationships, and measures. In this way decision-making users can represent in an abstract manner their analysis needs without considering complex implementation issues and spatial OLAP tools developers can have a common vision for representing spatial data in a multidimensional model. In this paper we propose the transformation of a conceptual schema based on the MultiDimER constructs to an object-relational schema. We based our mapping on the SQL:2003 and SQL/MM standards giving examples of commercial implementation using Oracle 10g with its spatial extension. Further we use spatial integrity constraints to ensure the semantic equivalence of the conceptual and logical schemas. We also show some examples of Oracle spatial functions, including aggregation functions required for the manipulation of spatial data. The described mappings to the object-relational model along with the examples using a commercial system show the feasibility of implementing spatial DWs in current commercial DBMSs. Further, using integrated architectures, where spatial and thematic data is defined within the same DBMS, facilitates the system management simplifying data definition and manipulation.},
+  acmid        = {1295836},
+  address      = {Hingham, MA, USA},
+  creationdate = {2008-07-28T00:00:00},
+  doi          = {10.1007/s10707-007-0022-3},
+  file         = {:by-author/M/Malinowski/2007_Malinowski_431.pdf:PDF},
+  groups       = {SQL},
+  issue_date   = {December 2007},
+  keywords     = {logical modeling, spatial data warehouses, spatial databases, spatial hierarchies, spatial measures},
+  numpages     = {27},
+  owner        = {saulius},
+  publisher    = {Kluwer Academic Publishers},
+  url          = {http://dx.doi.org/10.1007/s10707-007-0022-3},
+}
+
+@TechReport{Nieto-Santisteban2004,
+  author       = {María A. Nieto-Santisteban and Jim Gray and Alexander S. Szalay and James Annis and Aniruddha R. Thakar and William J. O’Mullane},
+  title        = {When Database Systems Meet The Grid},
+  year         = {2004},
+  abstract     = {We illustrate the benefits of combining database systems and Grid technologies for data-intensive applications. Using a cluster of SQL servers, we reimplemented an existing Grid application that finds galaxy clusters in a large astronomical database. The SQL implementation runs an order of magnitude faster than the earlier Tcl-C-file- based implementation. We discuss why and how Grid applications can take advantage of database systems.},
+  booktitle    = {Proceedings of the 2005 CIDR Conference},
+  creationdate = {2008-07-28T00:00:00},
+  file         = {:by-author/N/Nieto-Santisteban/2004_Nieto-Santisteban.pdf:PDF},
+  groups       = {SQL},
+  owner        = {saulius},
+  school       = {Microsoft Corporation},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
 0 AllEntriesGroup:;
+1 StaticGroup:Chemistry\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:van der Waals radii\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Computer\;2\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Data description\;2\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Languages\;2\;1\;0x8a8a8aff\;\;\;;
+4 StaticGroup:CSV\;0\;1\;0x8a8a8aff\;\;\;;
+4 StaticGroup:JSON\;0\;1\;0x8a8a8aff\;\;\;;
+4 StaticGroup:SQL\;0\;1\;0x8a8a8aff\;\;\;;
+4 StaticGroup:XML\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Programming\;2\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Languages\;2\;1\;0x6a7a9aff\;\;\;;
+4 StaticGroup:Ada\;0\;1\;0x8a8a8aff\;\;\;;
+4 StaticGroup:C\;0\;1\;0x8a8a8aff\;\;\;;
+4 StaticGroup:C++\;0\;1\;0x8a8a8aff\;\;\;;
+4 StaticGroup:Fortran\;0\;1\;0x8a8a8aff\;\;\;;
+4 StaticGroup:Perl\;0\;1\;0x8a8a8aff\;\;\;;
+4 StaticGroup:SQL\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Human\;2\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Languages\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Computer\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Languages\;0\;1\;0x6a7a9aff\;\;\;;
+2 StaticGroup:Languages\;2\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:English\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Esperanto\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Lithuanian\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Russian\;0\;1\;0x8a8a8aff\;\;\;;
 }
+
+@Comment{jabref-entrytype: presentation: req[author;title;year] opt[conference;course;lecture;organization;school]}
+
+@Comment{jabref-entrytype: webpage: req[author;retrieved;title;url] opt[institution;language;month;site;siteurl;year]}
