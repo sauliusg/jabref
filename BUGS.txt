@@ -1,7 +1,7 @@
 -- Existing libraries that contain entries with a has symbol ('#') are
    written out incorrectly and can not be parsed after saving.
 
-   
+-- New libraries incorrectly save entries with a hash ('#') symbols.
 
 -- Selecting another group looses highlight of the edited entry.
 
