@@ -1,3 +1,8 @@
+-- Existing libraries that contain entries with a has symbol ('#') are
+   written out incorrectly and can not be parsed after saving.
+
+   
+
 -- Selecting another group looses highlight of the edited entry.
 
    When a group interface is used, switching a group interferes with
