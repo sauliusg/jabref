@@ -5,6 +5,19 @@
    and can not parse their own result when comma is present in the
    entry text.
 
+-- Although the JabRef GUI does not allow multiple groups with the
+   same name, such groups are not detected when present in the BibTeX
+   file.
+
+   Such groups can be created by hand, or (as in my case) they were
+   inherited from the previous revisions of the database (when JabRef
+   allowed creation of groups with identical names in different
+   branches of the group tree).
+
+   The behaviour of JabRef in such cases is not clear (will the entry
+   be assigned to all such groups?), and fixing them required some
+   less than trivial shell scripting...
+
 -- Selecting another group looses highlight of the edited entry.
 
    When a group interface is used, switching a group interferes with
@@ -121,16 +134,3 @@
    (probably the current "Search for unlinked local files" wold do the
    job, but I am not sure, never tried it). In any case, such function
    used to be in menus some versions ago...
-
--- Although the JabRef GUI does not allow multiple groups with the
-   same name, such groups are not detected when present in the BibTeX
-   file.
-
-   Such groups can be created by hand, or (as in my case) they were
-   inherited from the previous revisions of the database (when JabRef
-   allowed creation of groups with identical names in different
-   branches of the group tree).
-
-   The behaviour of JabRef in such cases is not clear (will the entry
-   be assigned to all such groups?), and fixing them required some
-   less than trivial shell scripting...
