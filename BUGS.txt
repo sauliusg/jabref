@@ -1,3 +1,8 @@
+-- After renaming the file 'Rename to a given name', JabRef-5.2
+   triggers exception saying that it can not save the bibliography
+   file, althout the file was saved OK (probably problems are with
+   backup files).
+
 -- Existing libraries that contain entries with a has symbol ('#') are
    written out incorrectly and can not be parsed after saving.
 
